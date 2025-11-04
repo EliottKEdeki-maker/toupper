@@ -1,3 +1,12 @@
-module 
+module tb;
+  wire W1, W2, W3, W4, W5;          // 5 wires since last 5 values of output won't be affected since we are subtracting 100000
+  reg A,B,C,D,E,F,G,H,I,J,K         // 11 regs for everything else
 
+  num N1(A,B,C,D,E,F,G,H,I,J,K,W1,W2,W3,W4,W5);
+
+initial 
+  begin
+
+  end
+  initial #100 $finish;
 endmodule
