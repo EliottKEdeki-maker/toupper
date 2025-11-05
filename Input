@@ -1,8 +1,16 @@
 module num(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p); // Set up 8 inputs and outputs for digit you input and output of toupper function
   input a, b, c, d, e, f, g, h;
   output i, j, k, l, m, n, o, p;
-  wire w1, 
+  wire w1, w2;
   
-  and (#10) 
+  and #(10) (w1, b,c)
+  
+  
+  buff #(4) (i, a); // buff for these values since they never change since we are binary subtracting 32 which is 100000
+  buff #(4) (l, d);
+  buff #(4) (m, e);
+  buff #(4) (n, f);
+  buff #(4) (o, g);
+  buff #(4) (p, h);
   
 endmodule
