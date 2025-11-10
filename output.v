@@ -9,8 +9,25 @@ initial
     $dumpfile("wave.vcd")
     $dumpvars(0, tb,num);
     A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b1 C = 1'b0 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
+    #100  A = 1'b0 B = 1'b0 C = 1'b1 D = 1'b0 E = 1'b1 F = 1'b0 G = 1'b0 H = 1'b0
   end
-
-  initial #300 $finish;
+  initial #250 $finish;
 endmodule
  
