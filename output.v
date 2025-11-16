@@ -1,5 +1,5 @@
 module tb;
-  `timescale 1ns / 1ps
+  `timescale 1ns / 1ps;
   wire W1, W2, W3, W4, W5, W6, W7, W8;     // 8 wires for 8 outputs 
   reg A,B,C,D,E,F,G,H ;      // 8 regs for 8 inputs
   num N1(A,B,C,D,E,F,G,H,W1,W2,W3,W4,W5,W6,W7,W8);
