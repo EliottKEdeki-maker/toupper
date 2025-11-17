@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps;
+`timescale 1ns / 1ps
 module tb;
   
   wire W1, W2, W3, W4, W5, W6, W7, W8;     // 8 wires for 8 outputs 
