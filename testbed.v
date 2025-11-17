@@ -30,6 +30,6 @@ initial
     #50 A = 1'b0; B = 1'b1; C = 1'b1; D = 1'b1; E = 1'b1; F = 1'b1; G = 1'b1; H = 1'b1;
     
   end
-  initial #1000 $finish;
+  initial #950 $finish;
 endmodule
  
