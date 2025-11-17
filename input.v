@@ -1,5 +1,6 @@
+`timescale 1ns / 1ps;
 module num (a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p); // Set up 8 inputs and outputs for digit you input and output of toupper function
-  `timescale 1ns / 1ps;
+  
   
   input a, b, c, d, e, f, g, h;
   output i, j, k, l, m, n, o, p;
