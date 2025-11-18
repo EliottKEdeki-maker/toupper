@@ -11,11 +11,11 @@ module num (i7,i6,i5,i4,i3,i2,i1,i0,o7,o6,o5,o4,o3,o2,o1,o0); // Set up 8 inputs
   xor #(15) (w1, i6, i5);// o5 is only true for i6 = 1 and i5 = 0 so I use xnor to get rid of 00 and 11 then check for i6 = 1 to get i6 = 1 and i5 = 0 
   and #(10) (o5, w1, i6);
 
-  buf #(4) (o0, i0); // buf for these values since they never change since we are binary subtracting 32 which is 100000
+  buf #(4) (o7, i7); // buf for these values since they never change since we are binary subtracting 32 which is 100000
   buf #(4) (o3, i3);
   buf #(4) (o4, i4);
   buf #(4) (o5, i5);
   buf #(4) (o6, i6);
-  buf #(4) (o7, i7);
+  buf #(4) (o0, i0);
   
 endmodule
