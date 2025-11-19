@@ -6,7 +6,7 @@ module num (i7,i6,i5,i4,i3,i2,i1,i0,o7,o6,o5,o4,o3,o2,o1,o0); // Set up 8 inputs
   output o7,o6,o5,o4,o3,o2,o1,o0;
   wire w1;
   
-  and #(10) (o6, i6, i5); // o1 is only 1 if both i6 and i5 and are 1 so I use i6 AND i5 to find o1
+  and #(10) (o6, i6, i5); // o6 is only 1 if both i6 and i5 and are 1 so I use i6 AND i5 to find o6
 
   xor #(15) (w1, i6, i5);// o5 is only 1 for i6 = 1 and i5 = 0 so I use xnor to get rid of 00 and 11 then check for i6 = 1 to get i6 = 1 and i5 = 0 
   and #(10) (o5, w1, i6);
