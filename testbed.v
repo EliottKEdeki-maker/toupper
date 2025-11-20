@@ -10,26 +10,26 @@ initial //50 as arbitrary inter-input delay to begin with before we find thresho
     $dumpfile("wave.vcd");
     $dumpvars(0, tb, N1);
     i7 = 1'b0; i6 = 1'b0; i5 = 1'b1; i4 = 1'b0; i3 = 1'b1; i2 = 1'b0; i1 = 1'b0; i0 = 1'b0; // testing 00101000
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b1; i2 = 1'b0; i1 = 1'b0; i0 = 1'b0; // testing 01001000    
-    #50 i7 = 1'b1; i6 = 1'b0; i5 = 1'b1; i4 = 1'b1; i3 = 1'b0; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 10110111    
-    #50 i7 = 1'b1; i6 = 1'b0; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b0; i1 = 1'b1; i0 = 1'b1; // testing 10000011 
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b1; i1 = 1'b0; i0 = 1'b0; // testing 01111100    
-    #50 i7 = 1'b0; i6 = 1'b0; i5 = 1'b0; i4 = 1'b1; i3 = 1'b0; i2 = 1'b1; i1 = 1'b0; i0 = 1'b0; // testing 00010100    
-    #50 i7 = 1'b1; i6 = 1'b1; i5 = 1'b1; i4 = 1'b0; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b1; // testing 11101011    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b0; i3 = 1'b0; i2 = 1'b0; i1 = 1'b0; i0 = 1'b1; // testing 01100001    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b0; i1 = 1'b0; i0 = 1'b1; // testing 01000001    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b0; // testing 01111010    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 01000111    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b0; i3 = 1'b1; i2 = 1'b1; i1 = 1'b0; i0 = 1'b1; // testing 01101101    
-    #50 i7 = 1'b1; i6 = 1'b0; i5 = 1'b0; i4 = 1'b1; i3 = 1'b0; i2 = 1'b0; i1 = 1'b1; i0 = 1'b0; // testing 10010010    
-    #50 i7 = 1'b0; i6 = 1'b0; i5 = 1'b1; i4 = 1'b1; i3 = 1'b0; i2 = 1'b0; i1 = 1'b0; i0 = 1'b0; // testing 00110000    
-    #50 i7 = 1'b1; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b1; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 11001111    
-    #50 i7 = 1'b0; i6 = 1'b0; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b0; // testing 00111010    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b1; // testing 01111011    
-    #50 i7 = 1'b1; i6 = 1'b0; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b1; i1 = 1'b0; i0 = 1'b0; // testing 10000100    
-    #50 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 01111111    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b1; i2 = 1'b0; i1 = 1'b0; i0 = 1'b0; // testing 01001000    
+    #26 i7 = 1'b1; i6 = 1'b0; i5 = 1'b1; i4 = 1'b1; i3 = 1'b0; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 10110111    
+    #26 i7 = 1'b1; i6 = 1'b0; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b0; i1 = 1'b1; i0 = 1'b1; // testing 10000011 
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b1; i1 = 1'b0; i0 = 1'b0; // testing 01111100    
+    #26 i7 = 1'b0; i6 = 1'b0; i5 = 1'b0; i4 = 1'b1; i3 = 1'b0; i2 = 1'b1; i1 = 1'b0; i0 = 1'b0; // testing 00010100    
+    #26 i7 = 1'b1; i6 = 1'b1; i5 = 1'b1; i4 = 1'b0; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b1; // testing 11101011    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b0; i3 = 1'b0; i2 = 1'b0; i1 = 1'b0; i0 = 1'b1; // testing 01100001    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b0; i1 = 1'b0; i0 = 1'b1; // testing 01000001    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b0; // testing 01111010    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 01000111    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b0; i3 = 1'b1; i2 = 1'b1; i1 = 1'b0; i0 = 1'b1; // testing 01101101    
+    #26 i7 = 1'b1; i6 = 1'b0; i5 = 1'b0; i4 = 1'b1; i3 = 1'b0; i2 = 1'b0; i1 = 1'b1; i0 = 1'b0; // testing 10010010    
+    #26 i7 = 1'b0; i6 = 1'b0; i5 = 1'b1; i4 = 1'b1; i3 = 1'b0; i2 = 1'b0; i1 = 1'b0; i0 = 1'b0; // testing 00110000    
+    #26 i7 = 1'b1; i6 = 1'b1; i5 = 1'b0; i4 = 1'b0; i3 = 1'b1; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 11001111    
+    #26 i7 = 1'b0; i6 = 1'b0; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b0; // testing 00111010    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b0; i1 = 1'b1; i0 = 1'b1; // testing 01111011    
+    #26 i7 = 1'b1; i6 = 1'b0; i5 = 1'b0; i4 = 1'b0; i3 = 1'b0; i2 = 1'b1; i1 = 1'b0; i0 = 1'b0; // testing 10000100    
+    #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 01111111    
     
   end
-  initial #950 $finish; //total time is 950 since 50 * 19 = 950 which is the total time needed for each input
+  initial #494 $finish; //total time is 950 since 50 * 19 = 950 which is the total time needed for each input
 endmodule
  
