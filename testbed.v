@@ -30,6 +30,6 @@ initial //50 as arbitrary inter-input delay to begin with before we find thresho
     #26 i7 = 1'b0; i6 = 1'b1; i5 = 1'b1; i4 = 1'b1; i3 = 1'b1; i2 = 1'b1; i1 = 1'b1; i0 = 1'b1; // testing 01111111    
     
   end
-  initial #494 $finish; //total time is 950 since 50 * 19 = 950 which is the total time needed for each input
+  initial #494 $finish; //total time is 26 since 26 * 19 = 494 which is the total time needed for each input
 endmodule
  
